@@ -27,7 +27,7 @@ uint8_t serial_id[6];
 
 /*Network variables*/
 uint8_t num_slot = 4 - 1; //up to 16, when increased less power is used but it takes longer to update
-uint8_t main_freq = 0;
+uint8_t main_freq = 35;
 int rounds_to_resync = 500;
 /*END Network variables*/
 
@@ -38,7 +38,7 @@ void set_num_slot(uint8_t slots)
   num_slot = slots - 1;
 }
 
-uint8_t wu_channel = 4;
+uint8_t wu_channel = 35;
 void set_wu_channel(uint8_t channel)
 {
   wu_channel = channel;
